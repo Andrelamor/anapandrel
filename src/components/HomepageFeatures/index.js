@@ -48,7 +48,7 @@ const FeatureList = [
     ),
     description: (
       <>
-        Alguma tradição teria que ter nesse casamento, né.
+        Pelo menos alguma tradição teria nesse casamento, né?!
       </>
     ),
   },
@@ -63,12 +63,12 @@ const FeatureList = [
     ),
     description: (
       <>
-        Por que o shape pra caber nas ropitchas já tava pago, não precisa fazer a noiva andar mais.
+        O shape pra caber nas ropitchas já tava pago, então não precisa fazer os noivos suarem mais!
       </>
     ),
   },
   {
-    title: 'Nova smartTV ',
+    title: 'Nova SmartTV ',
     Svg: require('@site/static/img/cabuloso.svg').default,
     dropdown: (
       <DropdownCode
@@ -78,7 +78,7 @@ const FeatureList = [
     ),
     description: (
       <>
-        Pra ver o hepta do Cabuloso! Ana é tão ocupada que nem sempre dá pra ir ao Gigante...
+        Pra ver o hepta do Cabuloso! Ana é tão ocupada que nem sempre dá pra ir ao Gigante da Pampulha...
       </>
     ),
   },
@@ -93,7 +93,7 @@ const FeatureList = [
     ),
     description: (
       <>
-        Por que os gatos também amam, mas não viajam.
+        Porque os gatos também amam, mas não viajam...
       </>
     ),
   },
@@ -108,12 +108,12 @@ const FeatureList = [
     ),
     description: (
       <>
-        Afinal, somos Brasil e ele nos chama...
+        Afinal, somos Brasil e ele nos chama pro play...
       </>
     ),
   },
   {
-    title: 'Voucher do Espanta ou um Café dos Campeões',
+    title: 'Voucher do Espanta ou Café dos Campeões',
     Svg: require('@site/static/img/espanta.svg').default,
     dropdown: (
       <DropdownCode
@@ -123,7 +123,7 @@ const FeatureList = [
     ),
     description: (
       <>
-        Quem canta, seus males espanta
+        Quem canta, seus males espanta! 
       </>
     ),
   },

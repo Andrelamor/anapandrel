@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Ana Paula e André Luiz',
-  tagline: 'Venha celebrar conosco',
+  tagline: 'Venha celebrar conosco: 14 de março de 2026!',
   favicon: 'img/rings.jpg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

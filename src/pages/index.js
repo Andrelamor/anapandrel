@@ -17,11 +17,7 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            E, se topar, cola na listinha abaixo
-          </Link>
+            E, se topar, cola na listinha abaixo...
         </div>
       </div>
     </header>
