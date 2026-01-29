@@ -61,13 +61,7 @@ const FeatureList = [
        code={`00020126650014br.gov.bcb.pix01361c6ea963-3462-4807-95e1-44b3fdfe66a10203Pix5204000053039865406200.005802BR5925ANDRE LUIZ GUIMARAES AMOR6014BELO HORIZONTE62120508Pix200006304CCC6`}
       />
     ),
-    image: (
-    <LightboxImage
-      src={require('@site/static/img/pix-200.jpg').default}
-      alt="Fluxo da carruagem dos noivos"
-    />
-  ),
-  description: (
+    description: (
       <>
         Por que o shape pra caber nas ropitchas já tava pago, não precisa fazer a noiva andar mais.
       </>
