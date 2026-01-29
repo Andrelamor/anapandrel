@@ -93,9 +93,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Local',
           },
-          {to: '/blog', label: 'Local', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/Andrelamor/anapandrel',
             label: 'GitHub',
@@ -107,10 +107,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Local',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Quintal do Durval',
                 to: '/docs/intro',
               },
             ],
@@ -119,8 +119,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Meus githubs',
+                href: 'https://github.com/Andrelamor',
               },
             ],
           },
