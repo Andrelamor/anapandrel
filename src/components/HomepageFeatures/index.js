@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Aluguel da carruagem dos noivos',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/passeios.svg').default,
     description: (
       <>
         Por que o shape pra caber nas ropitchas já tava pago, não precisa fazer a noiva andar mais.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Passeios da lua de mel',
-    Svg: require('@site/static/img/passeios.svg').default,
+    Svg: require('@site/static/img/noivos-reteteu.svg').default,
     description: (
       <>
         Alguma tradição teria que ter nesse casamento, né.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Nova smartTV ',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('tv.svg').default,
     description: (
       <>
         Pra ver o hepta do Cabuloso! Ana é tão ocupada que nem sempre dá pra ir ao Gigante...
