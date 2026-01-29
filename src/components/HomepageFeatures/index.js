@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Passeios da lua de mel',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/passeios.svg').default,
     description: (
       <>
         Alguma tradição teria que ter nesse casamento, né.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
     {
     title: 'Vale adega cheia',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/cat-adega.svg').default,
     description: (
       <>
         Afinal, somos Brasil e ele nos chama...
@@ -50,7 +50,7 @@ const FeatureList = [
   },
   {
     title: 'Voucher do Espanta ou um Café dos Campeões',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/espanta.svg').default,
     description: (
       <>
         Quem canta, seus males espanta
