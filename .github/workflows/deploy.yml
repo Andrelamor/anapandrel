@@ -1,51 +1,55 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy Docusaurus
 
 on:
   push:
     branches:
       - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Build Docusaurus
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+          node-version: '18'
+
+      - name: Cache node modules
+        uses: actions/cache@v4
         with:
-          node-version: 20
-          cache: npm
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: npm ci
-      - name: Build website
+        # If your Docusaurus site lives in a subdirectory, add:
+        # working-directory: ./website
+
+      - name: Build site
         run: npm run build
+        # working-directory: ./website
 
-      - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Verify build output
+        run: |
+          if [ ! -f ./build/index.html ]; then
+            echo "build/index.html not found"
+            ls -la build || true
+            exit 1
+          fi
+
+      - name: Deploy to GitHub Pages (gh-pages)
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: build
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "chore(deploy): publish site from ${{ github.ref }} by GitHub Actions"
+          keep_files: false
