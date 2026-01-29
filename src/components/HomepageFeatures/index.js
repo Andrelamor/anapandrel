@@ -4,32 +4,56 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Aluguel da carruagem dos noivos',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Por que o shape pra caber nas ropitchas já tava pago, não precisa fazer a noiva andar mais.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Passeios da lua de mel',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Alguma tradição teria que ter nesse casamento, né.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Nova smartTV ',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Pra ver o hepta do Cabuloso! Ana é tão ocupada que nem sempre dá pra ir ao Gigante...
+      </>
+    ),
+  },
+    {
+    title: 'Vale adega cheia',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Afinal, somos Brasil e ele nos chama...
+      </>
+    ),
+  },
+  {
+    title: 'Vale catsitter',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Por que os gatos também amam, mas não viajam.
+      </>
+    ),
+  },
+  {
+    title: 'Voucher do Espanta ou um Café dos Campeões',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Quem canta, seus males espanta
       </>
     ),
   },
