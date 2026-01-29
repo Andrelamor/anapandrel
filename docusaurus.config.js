@@ -86,7 +86,7 @@ const config = {
         title: 'Ana e André',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/rings.svg',
+          src: 'img/favicon.ico',
         },
         items: [
           {
