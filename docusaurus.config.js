@@ -92,8 +92,9 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Local',
+            position: 'right',
+            label: 'tutorial do site'},
+          {label: 'Local',
             to: 'https://quintaldodurval.com.br/'
           },
           {to: 'https://andrelamor.github.io/anapandrel/', label: 'Mais infos sobre o dia! Em breve...', position: 'left'},
