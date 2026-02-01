@@ -94,8 +94,9 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Local',
+            to: 'https://quintaldodurval.com.br/'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'https://andrelamor.github.io/anapandrel/', label: 'Mais infos sobre o dia! Em breve...', position: 'left'},
           {
             href: 'https://github.com/Andrelamor/anapandrel',
             label: 'GitHub',
@@ -111,15 +112,15 @@ const config = {
             items: [
               {
                 label: 'Quintal do Durval',
-                to: '/docs/intro',
+                to: 'https://quintaldodurval.com.br/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Como fiz esse trem e ideias para trabalhos',
             items: [
               {
-                label: 'Meus githubs',
+                label: 'Meus githubs (sites, mapas, projetos e outros bagulhames)',
                 href: 'https://github.com/Andrelamor',
               },
             ],

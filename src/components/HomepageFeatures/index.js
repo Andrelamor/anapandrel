@@ -113,7 +113,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Voucher do Espanta ou Café dos Campeões',
+    title: 'Voucher do Espanta',
     Svg: require('@site/static/img/espanta.svg').default,
     dropdown: (
       <DropdownCode
