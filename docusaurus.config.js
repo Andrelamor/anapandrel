@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Ana Paula e André Luiz',
-  tagline: 'Venha celebrar conosco: 14 de março de 2026!',
+  title: 'Ana Paula e André Luiz, 📅 14/03/2026, às 16:30!',
+  tagline: 'Listinha de presentes abaixo...',
   favicon: 'img/rings.jpg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -97,7 +97,7 @@ const config = {
           {label: 'Local',
             to: 'https://quintaldodurval.com.br/'
           },
-          {to: 'https://andrelamor.github.io/anapandrel/', label: 'Mais infos sobre o dia! Em breve...', position: 'left'},
+          {to: '/docs/intro', label: 'Roupas e mais infos', position: 'left'},
           {
             href: 'https://github.com/Andrelamor/anapandrel',
             label: 'GitHub',
